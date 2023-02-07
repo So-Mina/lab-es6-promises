@@ -169,6 +169,7 @@ Promise.all([
   obtainInstruction("brusselsSprouts", 4),
   obtainInstruction("brusselsSprouts", 5),
   obtainInstruction("brusselsSprouts", 6),
+  obtainInstruction("brusselsSprouts", 7),
 ])
 
  .then((instructionsList) =>
