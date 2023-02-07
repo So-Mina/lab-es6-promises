@@ -162,13 +162,13 @@ async function makeBroccoli() {
 // Bonus 2 - Promise all
 
 Promise.all([
-  obtainInstruction("broccoli", 0),
-  obtainInstruction("broccoli", 1),
-  obtainInstruction("broccoli", 2),
-  obtainInstruction("broccoli", 3),
-  obtainInstruction("broccoli", 4),
-  obtainInstruction("broccoli", 5),
-  obtainInstruction("broccoli", 6),
+  obtainInstruction("brusselsSprouts", 0),
+  obtainInstruction("brusselsSprouts", 1),
+  obtainInstruction("brusselsSprouts", 2),
+  obtainInstruction("brusselsSprouts", 3),
+  obtainInstruction("brusselsSprouts", 4),
+  obtainInstruction("brusselsSprouts", 5),
+  obtainInstruction("brusselsSprouts", 6),
 ])
 
  .then((instructionsList) =>
@@ -178,10 +178,10 @@ Promise.all([
  ) .catch((error) => {
    console.log(error)
  })
- 
+
  .then(() => {
    document.querySelector("#brusselsSprouts").innerHTML += `<li>${"Brussels sprouts are ready!"}</li>`
-   document.querySelector("#brusselsSproutsImg").removeAttribute("hidden")
+   /* bonus 1 */ document.querySelector("#brusselsSproutsImg").removeAttribute("hidden")
  }) .catch((error) => {
    console.log(error)
  })
